@@ -578,9 +578,12 @@ a {
 	display: flex;
 	font-size: 12px;
 	letter-spacing: 0pt;
+    margin-bottom:20px;
 }
 
 .youtube-video-container {
+	  margin-top:20px;
+
   position: relative;
   overflow: hidden;
   width: 50%;
