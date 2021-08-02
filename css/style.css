@@ -386,6 +386,7 @@ img {
 	font-size: 60px;
 	margin: 32px 0;
 	color: #674ea7;
+	text-align: center;
 }
 
 .title h2 {
@@ -397,6 +398,7 @@ img {
 	font-size: 24px;
 	color: #e25c67;
 	line-height: 1;
+	text-align: center;
 }
 
 .dance-med {
@@ -564,7 +566,7 @@ a {
 	margin-bottom: 24px;
 }
 
-.twitter {
+.twitter 
 	color: #874562;
 }
 
@@ -576,4 +578,59 @@ a {
 	display: flex;
 	font-size: 12px;
 	letter-spacing: 0pt;
+}
+
+.youtube-video-container {
+  position: relative;
+  overflow: hidden;
+  width: 50%;
+}
+
+.youtube-video-container::after {
+  display: block;
+  content: "";
+  padding-top: 56.25%;
+}
+
+.youtube-video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.pulse2{
+    animation-name:pulse2;
+    animation-duration:1s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear
+}
+@keyframes pulse2{
+    0%{
+        transform:scale(1.1)
+    }
+    50%{
+        transform:scale(0.8)
+    }
+    100%{
+        transform:scale(1)
+    }
+}
+
+
+footer span.fa-heart{
+    color:#ff415c;
+    font-size:18px;
+    margin:0 2px
+}
+
+
+	div[class="row"] {
+    outline: 1px dotted rgba(0, 0, 0, 0.25);
+}
+
+div[class^="col-"] {
+    background-color: rgba(255, 0, 0, 0.2);
+    outline: 1px dotted rgba(0, 0, 0, 0.5);
 }
